@@ -1,0 +1,66 @@
+.divCard {
+    background-color: rgb(132, 184, 207);
+    border: solid 2px black;
+    width: 15%;
+    padding: 1%;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.76);
+    transition: 0.8s;
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: 0.1fr repeat(6, 0.2fr);
+    text-align: center;
+    margin-top: 8%;
+}
+
+.divCard:hover {
+    box-shadow: 12px 12px 5px 0px rgba(0,0,0,0.76);
+}
+
+.cerrar {
+    border: solid 1px black;
+    background-color: rgb(202, 29, 29);
+    cursor: pointer;
+    border-radius: 3px;
+    transition:0.8s;
+}
+
+.cerrar:hover {
+    box-shadow: 2.5px 2.5px 2px 0px rgba(0,0,0,0.76);
+}
+
+.h2 {
+    cursor: text;
+    font-size: 90%;
+}
+
+.imagen {
+    border: solid 2px black;
+    border-radius: 10px;
+    max-width: 98%;
+}
+
+.name {
+    font-size: 125%;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nameContainer {
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    align-items: center;
+    justify-items: end;
+}
+
+.botonFav {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.botonFav:hover {
+    transform: scale(1.2);
+}
