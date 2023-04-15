@@ -1,0 +1,21 @@
+.div {
+    margin-top: 7%;
+}
+
+.botones {
+    margin-right: 2%;
+    background-color: rgb(226, 217, 217);
+    color:black;
+    font-size: 14px;
+    border: solid 1px black;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 1.5s ease;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.76);
+    margin-right: 4%;
+}
+
+.botones:hover{
+    background-color: rgb(180, 170, 170);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.76);
+}

@@ -1,3 +1,4 @@
+import styles from './Favorites.module.css';
 import React from "react";
 import { useState } from "react";
 import { connect } from "react-redux";
@@ -32,12 +33,12 @@ const Favorites = ({myFavorites, onClose, removeFav}) => {
     }
 
     return (
-        <div>
-            <select name="select1" onChange={handleOrder}>
+        <div className={styles.div}>
+            <select className={styles.botones} name="select1" onChange={handleOrder}>
                 <option value="A">Ascendente</option>
                 <option value="D">Descendiente</option>
             </select>
-            <select name="select2" onChange={handleFilter}>
+            <select className={styles.botones} name="select2" onChange={handleFilter}>
                 <option value="all">Todos</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
@@ -52,7 +53,7 @@ const Favorites = ({myFavorites, onClose, removeFav}) => {
             status={status}
             species={species}
             gender={gender}
-            origin={origin.name}
+            origin={origin}
             image={image}
             onClose={() => closeFavorite(id)}
             />

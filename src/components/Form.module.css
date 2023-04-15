@@ -1,0 +1,56 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10%; 
+}
+
+@font-face {
+    font-family: 'get_schwifty';
+    src: url('../img/get_schwifty.ttf') format('truetype');
+    font-display: swap;
+}
+
+.titulo {
+    font-family: 'get_schwifty';
+    font-size: 100px;
+}
+
+.input {
+    background-color: rgb(226, 217, 217);
+    color:black;
+    font-size: 15px;
+    border: solid 1px black;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 1.5s ease;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.76);
+}
+
+.input:hover {
+    background-color: rgb(180, 170, 170);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.76);
+}
+
+.boton {
+    background-color: rgb(226, 217, 217);
+    color:black;
+    font-size: 17px;
+    border: solid 1px black;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 1.5s ease;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.76);
+    margin-left: 35%;
+}
+
+.boton:hover {
+    background-color: rgb(180, 170, 170);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.76);
+}
+
+.label {
+    font-family: 'get_schwifty';
+    font-size: 40px;
+}
