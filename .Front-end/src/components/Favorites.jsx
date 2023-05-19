@@ -18,13 +18,13 @@ const Favorites = ({myFavorites, onClose, removeFav}) => {
 
     const [aux, setAux] = useState(false);
 
-    const handleOrder = (e) => {
-        dispatch(orderCards(e.target.value))
-        setAux(!aux);
+    const handleOrder = (event) => {
+        dispatch(orderCards(event.target.value))
+        setAux(true);
     }
 
-    const handleFilter = (e) => {
-        const value = e.target.value;
+    const handleFilter = (event) => {
+        const value = event.target.value;
         if (value === "all") {
             dispatch(filterCards(null));
         } else {
@@ -33,6 +33,7 @@ const Favorites = ({myFavorites, onClose, removeFav}) => {
     }
 
     return (
+        
         <div className={styles.div}>
             <select className={styles.botones} name="select1" onChange={handleOrder}>
                 <option value="A">Ascendente</option>
@@ -58,6 +59,7 @@ const Favorites = ({myFavorites, onClose, removeFav}) => {
             onClose={() => closeFavorite(id)}
             />
             ))}
+            {aux && <p>Esta sección se muestra cuando aux es verdadero</p>}
         </div>
     )
 }

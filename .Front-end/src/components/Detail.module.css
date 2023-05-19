@@ -1,0 +1,33 @@
+.div {
+    margin-top: 7%;
+}
+
+.characterInfo {
+    float: left;
+    width: 50%;
+}
+
+.imagen {
+    float: right;
+    width: 28%;
+    margin-top: 2%;
+    margin-right: 20%;
+    border: solid 2px black;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.76);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.imagen:hover {
+    box-shadow: 12px 12px 5px 0px rgba(0,0,0,0.76);
+}
+
+.h2 {
+    line-height: 250%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.h2:hover {
+    transform: scale(1.03);
+}
